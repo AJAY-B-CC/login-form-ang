@@ -1,0 +1,163 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 98vh; /* Use min-height to ensure full viewport height */
+    background-color: #f5f6f8;
+    font-family: "Rubik", sans-serif;
+    color: var(--text-color);
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ebecee;
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 400px; /* Set maximum width */
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 30px;
+}
+
+/* Add media query for responsiveness */
+@media screen and (max-width: 600px) {
+    .form-container {
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+}
+
+.title {
+    font-size: 25px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 50px;
+    aspect-ratio: 1/1;
+    outline: 2px solid #ebecee;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-basic-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.designation {
+    font-size: 15px;
+}
+
+.name {
+    font-weight: 500;
+}
+
+.password-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-container {
+    width: 100%; /* Adjust width for responsiveness */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--text-color);
+}
+
+input {
+    height: 100%; /* Adjust height for responsiveness */
+    width: 100%; /* Adjust width for responsiveness */
+   
+    outline: none;
+    font-family: "Rubik", sans-serif;
+    color: var(--text-color);
+    border-radius: 5px;
+    padding-left: 20px;
+
+}
+
+#visible-toggle {
+    position: absolute;
+    right: -30px;
+    cursor: pointer;
+}
+
+.btn-controls {
+    width: 100%; /* Adjust width for responsiveness */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.toggle {
+    width: 40px;
+    height: 20px;
+    border: 2px solid var(--text-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 1px;
+}
+
+.option {
+    height: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    transition: all 500ms ease;
+}
+
+.btn-controls>button {
+    height: 50px;
+    width: 100%; /* Adjust width for responsiveness */
+    background-color: var(--text-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition:transform 500ms ease;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+a {
+    color: var(--text-color)
+}
+
+.cursor{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    transition: 0.1s;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 200px;
+}
+
