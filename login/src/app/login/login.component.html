@@ -6,31 +6,21 @@
       <label for="username">Username</label>
       <div class="input-container">
         <i class="fas fa-solid fa-key"></i>
-        <input
-          type="text"
-          name="username"
-          id="username"
-          value=""
-          placeholder="Enter your username here"
-        />
+        <input [(ngModel)]="username" type="text" name="username" id="username" value=""
+          placeholder="Enter your username here" />
       </div>
       <label for="password">Password</label>
       <div class="input-container">
         <i class="fas fa-solid fa-key"></i>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          value=""
-          placeholder="Enter your password here"
-        />
+        <input [(ngModel)]="password" type="password" name="password" id="password" value=""
+          placeholder="Enter your password here" />
         <i class="fas fa-solid fa-eye-slash" id="visible-toggle"></i>
       </div>
     </div>
     <div class="btn-controls">
       <div class="toggle-container">
         <div class="toggle" id="toggle"></div>
-        <button class="btn">Continue</button>
+        <button class="btn" (click)="onLogin()">Continue</button>
       </div>
     </div>
   </div>
